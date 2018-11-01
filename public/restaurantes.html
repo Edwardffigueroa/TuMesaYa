@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116214088-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116214088-1');
+</script>
+   
+    <meta charset="UTF-8">
+    <title>tumesaYA.com</title>
+     <link rel="shortcut icon" href="images/flavicon.png" type="image/png" />
+    <!--     general meta-->
+    <meta name="description" content="Olvídate de esperar, de los malentendidos y reserva tu mejor experiencia.">
+  <meta name="keywords" content="Restaurantes,Reservas,Colombia,Sistema, administracion, comidas, mesa, ya, restaurantes,regalos, comensales, reserva">
+  <meta name="author" content="TuMesaYa"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--     facebook meta-->
+    
+    <meta property="og:url"                content="https://tumesaya.com/" />
+<meta property="og:type"               content="Sistema de reservas" />
+<meta property="og:title"              content="Olvídate de esperar, de los malentendidos y reserva tu mejor experiencia." />
+<meta property="og:description"        content="Reserva en tu restaurante favorito inmediatamente, en la ubicación que más te guste y además obtén beneficios y descuentos..." />
+<meta property="og:image"              content="https://tumesaya.com/images/logogrande.png" />
+   
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    
+ <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500|Montserrat:300,400,500,600,700" rel="stylesheet">
+   
+   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
+     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    
+<!--    jquery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+
+    
+<!--    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>-->
+   
+    
+</head>
+
+<body>
+ 
+ 
+ <div class="fondoRestaurantes"></div>
+  
+  <div class="mainRes">
+  
+  <header>  
+     
+      <div class="logo"> <a href="index.html"><img src="images/logo.png" alt=""></a></div>
+      <a href="index.html"><div class="buttonRestaurante"> <p>Quiero hacer una reserva</p></div></a>
+  
+  </header>
+  
+  <section class="infoPpalRestaurante">
+     <div class="title"> <h3>Deja a un lado los dolores de cabeza y malentendidos con tus clientes. Únete <b> ya </b>y obtén beneficios como:</h3> </div>
+     
+     <div class="iconsRestaurantes">
+        
+        <div class="iconRestaurante">
+          
+          <img src="images/resplataformaicon.png" alt="">
+           <h3>Plataforma para gestionar y administrar todas tus reservas.</h3>
+           
+            <p>Olvídate de los libros, cuadernos y tablas desorganizadas, con nuestra plataforma podrás administrar en un mismo sitio las reservas que hacen tus clientes por tumesaya.com, por teléfono o cualquier otro medio.</p>
+            
+        </div>
+        
+                <div class="iconRestaurante">
+                
+                <img src="images/resmapavirtual.png" alt="">
+                
+                <h3>Crea un mapa virtual para organizar mejor tu restaurante</h3>
+                
+            <p>Puedes organizar tu restaurante creando un mapa virtual del mismo, donde puedes ver cuales mesas están reservadas y toda la información de quien reservó. Además, puedes escoger el número de mesas que quieres que puedan ser reservadas cada día.</p>
+            
+        </div>
+        
+           <div class="iconRestaurante">
+           
+           <img src="images/resconecta.png" alt="">
+           
+           <h3>Conecta tu restaurante con nuevos clientes</h3>
+           
+            <p>Estando en tumesaya.com puedes obtener visibilidad para clientes que aún no te conozcan. Por medio de los gustos de los comensales podremos recomendar tu restaurante y tu también puedes aumentar tu visibilidad con promociones y descuentos especiales.</p>
+            
+        </div>
+        <div class="iconRestaurante">
+         
+         <img src="images/resaumentagain.png" alt="">
+          
+          <h3>Aumenta tus ganancias y tu número de reservas.</h3>
+           
+            <p>Al brindar una mejor experiencia en cuanto a reservas y funcionalidades para tus clientes, habrá mayor seguridad y agrado al momento de reservar, lo que hará que reserven en tu restaurante más seguido, aumentando así los ingresos de tu restaurante.</p>
+            
+        </div>
+ 
+     <div class="iconRestaurante">
+          
+          <img src="images/reslohacemosporti.png" alt="">
+           
+           <h3>¡Y lo hacemos por ti!</h3>
+           
+            <p>Respondemos a las solicitudes de reservas de forma automatizada e inmediata. Cuándo tienes una mesa disponible y alguien la solicita de inmediato se la asignamos, no tienes que preocuparte por revisar la plataforma cada 5 minutos para responder a tus clientes.</p>
+            
+        </div>
+ 
+ 
+         
+     </div>
+     
+     <div class="buttonReservar">
+        <a href="restaurantesform.html" onclick="espia()"> <p>Estás interesado?</p></a>
+     </div>
+      
+  </section>
+  
+  <footer><p>© TumesaYA.com 2018. Todos los derechos reservados. Condiciones de uso y Política de privacidad.
+</p></footer>
+   
+<!--    <section class="formulario"></section>-->
+    </div>
+     
+    <script>
+        window.sr = ScrollReveal();
+
+sr.reveal('.iconRestaurante', { duration: 2000 }, 50);
+        
+    // Initialize Firebase
+//  var config = {
+//    apiKey: "AIzaSyBUqw6mRUGVVaCEKLOXny9t4eCBmkeWrts",
+//    authDomain: "experimentodatabase.firebaseapp.com",
+//    databaseURL: "https://experimentodatabase.firebaseio.com",
+//    projectId: "experimentodatabase",
+//    storageBucket: "experimentodatabase.appspot.com",
+//    messagingSenderId: "27995376630"
+//  };
+//
+//  firebase.initializeApp(config);
+//
+//var database = firebase.database();
+//
+//var comensales = database.ref('comensal');
+//
+//var data = {
+//  correo: 'jaramillo',
+//  count: 5
+//}
+//
+//comensales.push(data);
+        
+        
+
+
+    </script>
+</body>
+</html>

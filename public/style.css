@@ -1,0 +1,632 @@
+*{
+    
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: lightgray;
+
+}
+
+ html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+
+            }
+
+
+
+
+
+
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    
+    height: 100%;
+/*    background-color: black;*/
+    display: flex;
+    flex-flow: column nowrap;
+    color: aqua;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    
+}
+
+.fondo{
+    /*    fondo*/
+    z-index: -100;
+    position:absolute;
+      width: 100%;
+    height: 100%;
+    min-height: 700px;
+    min-height: 700px;
+      background-color: black;
+    opacity: 0.3;
+    
+     background-image: url(images/fondo.png);
+       background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    width: 100%;
+/*    padding: 20px;*/
+    
+}
+
+
+.logo{
+    
+    width: 30%;
+    
+/*    height: 30px;*/
+/*    background-color: yellow;*/
+    
+}
+
+.logo img{
+    
+    padding: 20px;
+    width: 65%;
+    
+}
+
+
+.buttonRestaurante p {
+    
+
+    
+  border: solid #9B9B9B 2px;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+/*  font-size: 12px;*/
+  padding: 14px;
+  text-decoration: none;
+    margin: 20px;
+    
+}
+
+.buttonRestaurante p:hover {
+ 
+  border: solid #ffffff 2px;
+  background:#560000;
+    
+}
+
+
+
+
+.infoPpal{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+/*    height: 550px;*/
+    
+    width: 100%;
+    
+    
+}
+
+.infoPpal .title {
+    
+    margin-top: 40px;
+    width: 50%;
+    text-align: center;
+    
+    
+}
+
+.infoPpal .title h3{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.icons{
+    
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 2000px;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+}
+
+.icon{
+    
+    width: 18%;
+    
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.icon img{
+
+    width: 50%;
+
+}
+
+.icon p{
+    
+    padding: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.icon p b{
+    font-weight: 600;
+    
+}
+
+
+
+.buttonReservar p{
+    
+ background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #ff3838);
+  background-image: -moz-linear-gradient(top, #ff0000, #ff3838);
+  background-image: -ms-linear-gradient(top, #ff0000, #ff3838);
+  background-image: -o-linear-gradient(top, #ff0000, #ff3838);
+  background-image: linear-gradient(to bottom, #ff0000, #ff3838);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+   width: 100%;
+/*  font-size: 12px;*/
+  padding: 14px;
+    text-align: center;
+  text-decoration: none;
+    
+}
+
+.buttonReservar p:hover{
+    
+ background: #c20000;
+  background-image: -webkit-linear-gradient(top, #c20000, #910000);
+  background-image: -moz-linear-gradient(top, #c20000, #910000);
+  background-image: -ms-linear-gradient(top, #c20000, #910000);
+  background-image: -o-linear-gradient(top, #c20000, #910000);
+  background-image: linear-gradient(to bottom, #c20000, #910000);
+  text-decoration: none;
+    
+}
+
+footer{
+    
+    margin: 30px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p { 
+    width: 50%;
+    text-align: center;
+    font-size: 9px;
+}
+
+
+/*Restaurantes*/
+
+.infoPpalRestaurante{
+    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.infoPpalRestaurante .title{
+    
+    width: 50%;
+    text-align: center;
+    margin: 25px;
+      
+    
+}
+.infoPpalRestaurante .title h3{
+ font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.mainRes{
+    
+/*    height: 100%;*/
+/*    background-color: black;*/
+    display: flex;
+    flex-flow: column wrap;
+    color: aqua;
+    justify-content: space-between;
+    align-content: space-around;
+    align-content: space-around;
+    
+}
+
+.iconsRestaurantes{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+.iconRestaurante{
+    
+    text-align: center;
+    width: 30%;
+    height: auto;
+    margin: 20px;
+    margin-top: 30px;
+  
+
+}
+
+.iconRestaurante h3{
+    margin: 10px;
+      font-weight: 400;
+    
+}
+
+.iconRestaurante p{
+    
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 180%;
+    
+}
+
+.iconRestaurante img{
+    opacity: 0.8;
+}
+
+
+
+.iconRestaurante img:hover{
+    opacity: 1;
+    
+}
+
+.fondoRestaurantes{
+    
+    /*    fondo*/
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    
+    position:fixed;
+    
+ 
+    min-height: 650px;
+    min-height: 650px;
+      background-color: black;
+    opacity: 0.2;
+    
+    background-image: url(images/fondorestaurante.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/*secciones de form*/
+
+.infoPpalForm{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.infoPpalForm .title{
+    width:  50%;
+}
+.infoPpalForm h2{
+    margin: 40px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+.logosppales{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+.logosppales img{
+    
+    width: 70%;
+}
+
+.logosppales p{
+    text-align: center;
+    margin: 40px;
+}
+
+.redsocial{
+    
+    justify-content: space-around;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+}
+
+.redsocial img{
+    
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+ .infoPpalRestaurante .title b{
+        color: red;
+        
+    }
+
+
+/*form para restaurantes*/
+
+
+
+/*-------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    
+    .main{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .fondo{
+        
+    position: fixed;
+    height: 100%;
+        
+    }
+    
+
+
+    
+    header .logo {
+        width: 45%;
+    }
+    
+    header .logo img {
+        width: 100%;
+    }
+    
+    header .buttonRestaurante p{
+        color: lightgray;
+        
+        width: 60%;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
+        padding: 5px;
+    }
+   
+    
+    .infoPpal{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+/*        flex-direction: column;*/
+        
+    }
+    
+    .infoPpal .title{
+        
+        width: 80%;
+        
+    }
+    
+ .icons{
+    
+     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-content: space-around;
+/*    align-items: center;*/
+}
+
+.icon{
+    
+    width: 50%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+    
+    .buttonReservar{
+        margin-top: 30px;
+         width: 80%; 
+    }
+    
+    .buttonReservar p{
+        
+     width: 90%;  
+    text-align: center;
+        
+        
+    }
+    
+/*    restaurantes*/
+    
+    .iconsRestaurante {
+        
+        flex-direction: column;
+        
+    }
+    
+    .iconRestaurante{
+        
+        width: 100%;
+        
+    }
+    
+    .infoPpalForm .title{
+    width:  90%;
+}
+    
+    .infoPpalRestaurante .title{
+        width: 80%;
+    }
+    
+    .infoPpalRestaurante .title b{
+        color: red;
+        
+    }
+    
+    
+}
+ 
+
+/*formulario*/
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+   border: 1px solid #f2e3d2;
+-webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:20px;
+   width:300px;
+    
+   }
+
+#form-field {
+    
+   border: 1px solid #c9b7a2;
+   background: #e4d5c3;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   color: #c9b7a2;
+    
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding:8px;
+   margin-right: 10px;
+   width:280px;
+    
+   }
+
+
+#form-field:focus {
+   background: #fff;
+   color: #725129;
+   }
+
+
+
+
+
+.submit-button {
+/*   border: 1px solid #447314;*/
+/*   background: #6aa436;*/
+  
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+   color: #31540c;
+   font-family: helvetica, serif;
+   padding: 8.5px 18px;
+   font-size: 14px;
+   text-decoration: none;
+   
+    
+   }
+
+.submit-button:hover {
+    
+   border: 1px solid #447314;
+   text-shadow: #31540c 0 1px 0;
+   background: #6aa436;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+   background: -moz-linear-gradient(top, #8dc059, #6aa436);
+   background: -ms-linear-gradient(top, #8dc059, #6aa436);
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   color: #fff;
+    
+   }
+
+
+
+
+
+
